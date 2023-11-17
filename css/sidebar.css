@@ -1,0 +1,143 @@
+:root{
+    --mainColor: #f6f8fa;
+    --darkBlack: #2d2f31;
+    --darkGrey: #61666b;
+    --grey: #d5d5d5;
+    --ligntGrey: #f2f2f2;
+    --yellow: #fecb40;
+    --red: #df113c;
+
+}
+.dashboard{
+    height: 100%;
+    width: 100%;
+    padding-right: 250px;
+}
+
+
+.dashboard-order{
+    width: 340px;
+    min-height: 100%;
+    position: fixed;
+    top: 50px;
+    right: 0;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--mainColor);
+    z-index: 3;
+}
+
+.dashboard-order > h3 {
+    padding: 10px 0;
+
+}
+
+.order-address > h4{
+    line-height: 2;
+}
+.order-time{
+    font-size: 0.8rem;
+    color: var(--darkGrey);
+}
+.order-wrapper{
+    height: 300px;
+    width: 100%;
+    overflow-y: scroll;
+    margin: 20px 0;
+}
+
+/* custom scroll */
+
+.order-wrapper::-webkit-scrollbar{
+    width: 7px;
+}
+.order-wrapper::-webkit-scrollbar-track{
+    background-color: var(--ligntGrey);
+    border-radius: 20px;
+}
+.order-wraper::-webkit-scrollbar-thumb{
+    background-color: var(--darkGrey);
+    border-radius: 20px;
+}
+
+.order-card{
+    display: grid;
+    grid-template-columns: 0.6fr 1fr 0.5fr;
+    padding: 10px 0;
+    gap: 5px;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.order-image{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.order-detail>input{
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    background-color: transparent;
+    margin-left: 10px;
+}
+
+.divider{
+    width: 100%;
+    border: 1px dashed var(--grey);
+
+}
+.order-total > p{
+    padding: 10px 0;
+}
+.order-total > p > span {
+    float: right;
+    font-weight: 600;
+
+}
+
+.order-promo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--lightGrey);
+    border: 2px solid var(--grey);
+    border-radius: 10px;
+    height: 45px;
+    padding: 0 5px;
+    margin: 5px 0 10px 0;
+}
+
+.input-promo {
+    height: 100%;
+    background-color: transparent;
+    border: none;
+}
+.button-promo{
+    float: right;
+    background-color: var(--yellow);
+    border-radius: 5px;
+    border: none;
+    height: 80%;
+    width: 100%;
+    cursor: pointer;
+}
+
+.checkout{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    background-color: var(--red);
+    border:none;
+    border-radius: 20px;
+    color: var(--ligntGrey);
+    cursor: pointer;
+
+}
+.checkout:hover{
+    text-transform: uppercase;
+    font-weight: 600;
+}
